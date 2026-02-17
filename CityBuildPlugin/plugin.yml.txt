@@ -1,0 +1,24 @@
+name: CityBuildPlugin
+main: CityBuildPlugin\Main
+version: 1.0.0
+api: 5.0.0
+author: Codex
+website: https://axenthost.example
+commands:
+  plot:
+    description: Plotverwaltung für CityBuild
+    usage: "/plot <auto|claim|home|info|trust|untrust|list>"
+    permission: citybuild.plot.command
+  rang:
+    description: Ränge erstellen und bearbeiten
+    usage: "/rang <create|setprefix|setmaxplots|permission|setplayer|info|list>"
+    permission: citybuild.rank.manage
+permissions:
+  citybuild.rank.manage:
+    default: op
+  citybuild.plot.command:
+    default: true
+  citybuild.plot.admin:
+    default: op
+  citybuild.plot.multiclaim:
+    default: false
