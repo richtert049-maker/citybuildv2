@@ -4,5 +4,7 @@ branches:
 - main
 - master
 - work
-projects: []
+projects:
+  citybuildv2:
+    path: .
 ...
