@@ -1,18 +1,11 @@
- (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
-diff --git a/.poggit.yml b/.poggit.yml
-index b8ccf1517218a3547707ba43134778113edb357b..9d04872c98ebba94cae954910435703b85e4d74d 100644
---- a/.poggit.yml
-+++ b/.poggit.yml
-@@ -1,8 +1,9 @@
- --- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/richtert049-maker/citybuildv2
- build-by-default: true
- branches:
- - main
- - master
- - work
- projects: []
-+# Trigger initial Poggit build
- ...
- 
-EOF
-)
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/richtert049-maker/citybuildv2
+build-by-default: true
+branches:
+- main
+- master
+- work
+projects: []
+projects:
+  citybuildv2:
+    path: ""
+...
