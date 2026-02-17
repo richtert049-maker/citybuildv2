@@ -94,4 +94,5 @@ final class Main extends PluginBase{
     public function getRankManager() : RankManager{
         return $this->rankManager;
     }
+
 }
